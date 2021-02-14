@@ -7,11 +7,11 @@ const app = express();
 
 
 //import Routes
-const usersRouter = require('./routes/users');
+const ordersRouter = require('./routes/orders');
 const productsRouter = require('./routes/products');
 
 //use Routes
-app.use('/api/users', usersRouter);
+app.use('/api/orders', ordersRouter);
 app.use('/api/products', productsRouter);
 
 app.use(cors({
